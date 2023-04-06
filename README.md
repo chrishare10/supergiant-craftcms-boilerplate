@@ -27,20 +27,7 @@ A Craft CMS starter project using DDEV for local hosting and Vite for front-end 
 
 ## Getting Started
 
-### Option 1: With Composer (recommended)
-
-If you have [Composer](https://getcomposer.org/) installed on your local machine,
-you can use `create-project` to pull the latest tagged release.
-
-Open terminal prompt, and run:
-
-```shell
-composer create-project onedarnleyroad/craftcms PATH --no-install
-```
-
-Make sure that `PATH` is a **new** or **existing and empty** folder.
-
-### Option 2: With Git CLI
+### Option 1: With Git CLI
 
 Alternatively you can clone the repo via the Git CLI:
 
@@ -66,7 +53,7 @@ mv -f .gitignore.default .gitignore
 rm CHANGELOG.md && rm LICENSE.md && rm README.md
 ```
 
-### Option 3: Manual Download
+### Option 2: Manual Download
 
 Download a copy of the repo to your local machine and move to where you want to your project to run. Similar to above, you'll then want to clean up and set some default files for use. In the terminal, run:
 
