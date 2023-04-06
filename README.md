@@ -45,7 +45,7 @@ Make sure that `PATH` is a **new** or **existing and empty** folder.
 Alternatively you can clone the repo via the Git CLI:
 
 ```shell
-git clone git@github.com:onedarnleyroad/craftcms.git PATH
+git clone https://github.com/chrishare10/supergiant-craftcms-boilerplate.git PATH
 ```
 
 Make sure that `PATH` is a **new** _or_ **existing and empty** folder.
