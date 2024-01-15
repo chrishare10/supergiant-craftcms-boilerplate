@@ -1,8 +1,14 @@
 /* CSS */
 import "@js/parts/css";
 
-/* JS */
+/* Tailwind */
+import "@js/parts/tailwindcss";
+
+/* Lazyloading */
 import "@js/parts/lazyloading";
+
+/* JS */
+import "@js/parts/scripts";
 
 /**
  * Alpine JS
@@ -10,8 +16,11 @@ import "@js/parts/lazyloading";
  * when components start getting initialized.
  */
 import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse'
 window.Alpine = Alpine;
+Alpine.plugin(collapse)
 Alpine.start();
+
 
 /**
  * Accept HMR as per: https://vitejs.dev/guide/api-hmr.html

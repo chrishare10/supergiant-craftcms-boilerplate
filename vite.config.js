@@ -1,5 +1,4 @@
 import {defineConfig} from 'vite';
-import manifestSRI from 'vite-plugin-manifest-sri';
 import path from 'path';
 import viteCompression from 'vite-plugin-compression';
 import ViteRestart from 'vite-plugin-restart';
@@ -12,7 +11,7 @@ export default defineConfig(({command}) => ({
       transformMixedEsModules: true,
     },
     manifest: true,
-    outDir: path.resolve(__dirname, 'web/dist/'),
+    outDir: path.resolve(__dirname, 'public/dist/'),
     rollupOptions: {
       input: {
         app: path.resolve(__dirname, 'src/js/app.js'),
@@ -23,7 +22,6 @@ export default defineConfig(({command}) => ({
     },
   },
   plugins: [
-    manifestSRI(),
     viteCompression({
       filter: /\.(js|mjs|json|css|map)$/i
     }),
@@ -37,7 +35,8 @@ export default defineConfig(({command}) => ({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@css': path.resolve(__dirname, 'src/pcss'),
+      '@tailwindcss': path.resolve(__dirname, 'src/pcss'),
+      '@css': path.resolve(__dirname, 'src/css'),
       '@js': path.resolve(__dirname, 'src/js'),
     },
   },

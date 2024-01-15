@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@css/*": ["./src/pcss/*"],
+      "@tailwindcss/*": ["./src/pcss/*"],
+      "@css/*": ["./src/css/*"],
       "@js/*": ["./src/js/*"]
     }
   }

@@ -15,7 +15,7 @@ use craft\helpers\App;
 return [
     'aliases' => [
         '@web' => rtrim(APP::env('PRIMARY_SITE_URL'), '/'),
-        '@webroot' => dirname(__DIR__) . '/web',
+        '@webroot' => dirname(__DIR__) . '/public',
     ],
     'allowUpdates' => (bool) App::env('ALLOW_UPDATES'),
     'allowAdminChanges' => (bool) App::env('ALLOW_ADMIN_CHANGES'),
