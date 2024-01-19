@@ -15,9 +15,16 @@ module.exports = {
         'screenh' : '100vh',
       },
     },
-    fontFamily: {
-      sans: ['Lato', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
+    colors: {
+      blue: {
+        "dark": "#212026",
+        "light": "#7A98D1"
+      },
+      silver: "#C8CDD8"
+    }
+  },
+  fontFamily: {
+    sans: ['Inter', 'sans-serif'],
+    serif: ['Crimson', 'serif'],
   },
 };
